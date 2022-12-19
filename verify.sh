@@ -7,7 +7,7 @@ echo "${cyan}Installing dependencies...${reset}"
 poetry install
 
 echo "${cyan}Sorting imports...${reset}"
-fdfind --exclude '.venv' python3 | xargs isort
+fdfind --exclude '.venv' py | xargs isort
 
 echo "${cyan}Removing unused imports...${reset}"
 autoflake --in-place \
