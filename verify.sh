@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 cyan=$(tput setaf 37)    # info
-reset=$(tput sgr0)
+reset=$(tput sgr0)       # reset
 
-echo "${cyan}Installing dependencies...${reset}"
+echo "${cyan}Installing de-pen-de-ncies...${reset}"
 poetry install
 
 echo "${cyan}Sorting imports...${reset}"
@@ -20,5 +20,5 @@ black --line-length 130 \
       --exclude '/(.git|dist|.venv)/' \
       .
 
-echo "${cyan}Executing tests...${reset}"
+echo "${cyan}Executing demons...${reset}"
 pytest
