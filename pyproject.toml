@@ -1,6 +1,7 @@
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+# comment
 
 [tool.poetry]
 name = "py-click"
